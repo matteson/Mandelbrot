@@ -1,0 +1,22 @@
+Simple plotter for the Mandelbrot set in OCaml. Output is a Graphics canvas within a box specified at the command line. The canvas is colored grey or black based on how many iterations are required for iteration escape.
+
+This was mostly implemented while I was learning the basics of OCaml.
+
+Compile with
+
+ocamlopt Graphics.cmxa mandelbrot.ml -o mandel
+
+then run with
+
+./mandel
+
+You will be prompted for the left, bottom corner of the bounding box, and the width of the box.
+
+Good values for plotting a nice feature in the valley of elephants are:
+Left side of box:
+.323
+Bottom of box:
+.043
+Width of box:
+.027
+ 
